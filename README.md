@@ -374,57 +374,54 @@ Enter the name `ADMINS` and click **OK**.
 
 ---
 
-
+ ### Step 48 – Add Jane Doe to Domain Admins
 ![image](https://github.com/user-attachments/assets/b9a7fe98-83dd-44de-991f-75009660e8e4)
+Open **Active Directory Users and Computers (ADUC)** on DC-1.  
+Right-click the **Jane Doe** account, choose **Properties**, and go to the **Member Of** tab.  
+Click **Add**, type `Domain Admins`, and confirm. Then click **Apply** and **OK**.
 
+---
+
+### Step 49 – Open Run on Client-1
 ![image](https://github.com/user-attachments/assets/f79c4ac2-8e7d-4b4e-a7da-263e5f3a6bd0)
+On Client-1, press `Windows + R` to open the **Run** dialog.  
+This is used to quickly launch tools like `sysdm.cpl`.
 
+---
+
+### Step 50 – Use Remote Desktop to Connect to VMs
 ![image](https://github.com/user-attachments/assets/1743ba23-13ee-46bf-a41e-75a1a558d211)
+Open **Microsoft Remote Desktop** on your local machine.  
+Ensure both `dc-1` and `client-1` VMs are listed.  
+Double-click to start the connection.
 
+---
+
+### Step 51 – Log In Using Domain Credentials
 ![image](https://github.com/user-attachments/assets/033996a6-4974-4682-a2d0-49db0a2a7e54)
+When prompted in Remote Desktop, enter domain credentials:  
+**Username:** `mydomain.com\jane_admin`  
+**Password:** `[your password]`
 
+---
+
+### Step 52 – Open System Settings on Client-1
 ![image](https://github.com/user-attachments/assets/443d7c9b-4c75-4546-994e-a3416508b596)
+On Client-1, open **Settings > System > About**.  
+Verify the device name is `client-1` and check Windows version details.
 
+---
+
+### Step 53 – Open Advanced System Settings
 ![image](https://github.com/user-attachments/assets/ae506892-3877-4302-b11a-5fb995d8a189)
+In the About screen, click **Advanced system settings**.  
+This opens the **System Properties** window.
 
+---
+
+### Step 54 – Begin Domain Join Process
 ![image](https://github.com/user-attachments/assets/226e439d-c4e5-417b-8b07-b834ef813eac)
+In the System Properties window, click **Change** next to the computer name.  
+Choose **Domain**, and enter: `mydomain.com`.
 
-![image](https://github.com/user-attachments/assets/a8b0c2af-b60d-4db0-bf8f-d6f826d17e22)
-
-![image](https://github.com/user-attachments/assets/407ddf52-3f5a-494e-97cb-a4fdb9e62c40)
-
-![image](https://github.com/user-attachments/assets/2dc40268-f53f-4404-a79f-6e81a5e1f7df)
-
-![image](https://github.com/user-attachments/assets/ccc48ecb-7263-42a2-b76f-94a5d1b630f4)
-
-![image](https://github.com/user-attachments/assets/3358e661-145c-4959-8687-785e3f6be462)
-
-![image](https://github.com/user-attachments/assets/b8e0c040-bc5a-4290-affc-192f6627abef)
-
-![image](https://github.com/user-attachments/assets/f8d62266-06a0-4b17-a09f-29707651546c)
-
-![image](https://github.com/user-attachments/assets/f51c083b-eb02-47d1-8f1b-2a5410c5d006)
-
-![image](https://github.com/user-attachments/assets/483ea7c6-fc87-4999-9654-342e751238ed)
-
-![image](https://github.com/user-attachments/assets/cc7b9ec6-9e9e-46e1-b00c-46532747fb1c)
-
-![image](https://github.com/user-attachments/assets/3e8d7177-7e04-4206-8a9e-97b252af3103)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-
