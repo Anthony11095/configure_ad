@@ -1,44 +1,37 @@
 ![image](https://github.com/user-attachments/assets/145b11f7-f99b-405f-a558-c5346a22ba00)
 
-# Active Directory Domain Lab Deployment
+# 🖥️ Deploying Active Directory in a Virtual Lab Environment
 
-This project demonstrates the setup and configuration of an Active Directory environment using Windows Server virtual machines, including domain creation, user management, organizational units, remote access, and PowerShell scripting for automation.
+This project walks through setting up a virtual environment using Azure to install and configure Active Directory. You will deploy a domain controller, create organizational units and user accounts, and connect a client machine to your new domain.
 
----
+## 💻 Technologies Used
+- Microsoft Windows Server 2019 (Domain Controller)
+- Microsoft Windows 10 (Client Machine)
+- Active Directory Domain Services (AD DS)
+- Remote Desktop Protocol (RDP)
+- Azure Portal (Virtual Machine Management)
+- Active Directory Users and Computers (ADUC)
 
-## Environment and Technology Used
+## 📋 Prerequisites
 
-- **Platform:** Microsoft Azure (VM-based deployment)
-- **Virtual Machines:**
-  - `DC-1` – Domain Controller
-  - `Client-1` – Domain-joined Client
-- **Tools and Services:**
-  - Active Directory Domain Services (AD DS)
-  - Active Directory Users and Computers (ADUC)
-  - PowerShell ISE (Integrated Scripting Environment)
-  - Remote Desktop Protocol (RDP)
-- **Network Configuration:**
-  - Internal private IP addressing
-  - DC-1 acting as DNS server for the domain
+Before beginning installation, ensure you have the following:
 
----
-
-## Operating Systems Used
-
-- **Windows Server 2019** (on both `DC-1` and `Client-1`)
-
-- ## Prerequisites
-
-### Part 1 – Domain Setup
-
-- Two Windows Server VMs: `DC-1` (Domain Controller) and `Client-1`
-- Virtual machines deployed in Azure or Hyper-V with internal network connectivity
-- A new Active Directory forest (e.g., `mydomain.com`)
-- DNS configured with `DC-1` acting as the domain's DNS server
-- Administrative access to both VMs (`labuser`)
-- Active Directory Domain Services (AD DS) installed on `DC-1`
-- Access to Active Directory Users and Computers (ADUC)
-
+- ✅ Azure Subscription with at least 2 VMs:
+  - `DC-1` (Windows Server 2019)
+  - `Client-1` (Windows 10)
+- ✅ Virtual Machines are running
+- ✅ Remote Desktop access enabled for both VMs
+- ✅ Internet access on both VMs
+- ✅ Local administrator access on both VMs
+- ✅ Active Directory Domain Services feature available on `DC-1`
+- ✅ Updated Windows and system drivers
+- ✅ OS configuration and system updates applied
+- ✅ Required tools pre-installed or ready:
+  - Active Directory Tools (ADUC)
+  - PowerShell
+  - Remote Desktop Client
+- ✅ A plan for domain naming (e.g., `mydomain.com`)
+- ✅ Administrator credentials created for use (e.g., `jane_admin`)
 ---
 
 ## Installation Steps
