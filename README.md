@@ -478,10 +478,18 @@ In ADUC, check under the **Computers** container to make sure that `client-1` is
 ![image](https://github.com/user-attachments/assets/d9067879-b551-4db3-b8e4-7bda88cbde32)
 Right-click the domain root in ADUC, select **New > Organizational Unit**, and name it `_CLIENTS`. Then drag and drop `client-1` from the Computers container into the `_CLIENTS` OU.
 
-
+## ** STEP 64 – NAME THE NEW ORGANIZATIONAL UNIT**
 ![image](https://github.com/user-attachments/assets/fcf6944d-5314-4517-a9ba-b68d6eb411ae)
+In Active Directory Users and Computers, when prompted to name the new Organizational Unit, type `_CLIENTS` exactly as shown. Leave the checkbox "Protect container from accidental deletion" selected, then click **OK**.
 
+---
+
+## ** STEP 65 – VERIFY ORGANIZATIONAL UNITS STRUCTURE**
 ![image](https://github.com/user-attachments/assets/5daa5e8b-bdb9-4a22-98e3-5329abf2a248)
+Right-click the domain again to confirm you now see all relevant Organizational Units including `_ADMINS`, `_EMPLOYEES`, and the new `_CLIENTS`. Make sure the directory structure is clean and organized before continuing.
+
+
+
 
 
 
