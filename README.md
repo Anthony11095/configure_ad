@@ -46,7 +46,20 @@ This project demonstrates the setup and configuration of an Active Directory env
 - Remote Desktop enabled on `Client-1`
 - Permissions configured to allow domain users to connect via RDP
 - PowerShell ISE installed and ready on `DC-1`
-- Provided PowerShell script for bulk user 
+- Provided PowerShell script for bulk user
+
+  ![image](https://github.com/user-attachments/assets/e2633080-d9f6-4722-95f4-d45c7ef1f9c8)
+  ![image](https://github.com/user-attachments/assets/87f83de6-736f-4479-a46c-c464ff8aa58c)
+  ![image](https://github.com/user-attachments/assets/37ff8d4a-a037-4c4f-b67d-b5e2a0ecfd21)
+  ![image](https://github.com/user-attachments/assets/2f47a13c-1728-4056-ae59-d9fcffde6c65)
+ ![image](https://github.com/user-attachments/assets/5ef16986-8374-4745-be3c-ad056d7863d9)
+![image](https://github.com/user-attachments/assets/1f9c4313-59ba-4cba-83d5-31f084654c46)
+
+
+
+
+
+
 ![image](https://github.com/user-attachments/assets/47216e96-1734-44ce-9a00-31c35fb22b98)
 
 ![image](https://github.com/user-attachments/assets/e4458fba-e325-4078-8521-b997d14a9d37)
