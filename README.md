@@ -46,7 +46,57 @@ This project demonstrates the setup and configuration of an Active Directory env
 - Remote Desktop enabled on `Client-1`
 - Permissions configured to allow domain users to connect via RDP
 - PowerShell ISE installed and ready on `DC-1`
-- Provided PowerShell script for bulk user creation
-- Understanding of where user passwords are stored in the script
+- Provided PowerShell script for bulk user 
+![image](https://github.com/user-attachments/assets/47216e96-1734-44ce-9a00-31c35fb22b98)
+
+![image](https://github.com/user-attachments/assets/e4458fba-e325-4078-8521-b997d14a9d37)
+
+![image](https://github.com/user-attachments/assets/17cd520c-df11-439f-af64-da2016787103)
+
+![image](https://github.com/user-attachments/assets/e1d5aa9c-94a6-4e09-a072-68ad3cd59df2)
+
+![image](https://github.com/user-attachments/assets/255f94db-d673-4a44-8145-46a87d0f3016)
+
+![image](https://github.com/user-attachments/assets/dc32cb13-fb9f-40b4-bf14-b1a7b00bf6ec)
+
+![image](https://github.com/user-attachments/assets/d6188123-b10b-4544-9c02-92936aeaee24)
+
+![image](https://github.com/user-attachments/assets/7594d0a4-f53c-41b7-b337-e994b9edad0a)
+
+![image](https://github.com/user-attachments/assets/90bb3999-0c47-4b53-be8f-e9bb5a685456)
+
+![image](https://github.com/user-attachments/assets/9d4444ee-828f-4087-ab0d-dcee125ce30b)
+
+![image](https://github.com/user-attachments/assets/7d3ab057-c533-4614-bd72-a4fac5bc91d9)
+
+![image](https://github.com/user-attachments/assets/27a6df98-286b-48d1-882b-ac52951d4a2b)
+
+![image](https://github.com/user-attachments/assets/6cf7841d-606e-423e-854d-0e8d2b610456)
+
+![image](https://github.com/user-attachments/assets/c02bdb75-71ea-4175-a2fd-ecf004fcd847)
+
+![image](https://github.com/user-attachments/assets/784e8b6a-c4c5-4230-937d-41b09f5172bb)
+
+![image](https://github.com/user-attachments/assets/4d93f123-d0b8-45a4-a7f2-bbed37801aa5)
+
+![image](https://github.com/user-attachments/assets/0865252e-976f-4fa8-9c99-49e0627dd6ce)
+
+![image](https://github.com/user-attachments/assets/bbe1b2a6-ba5d-42ce-9267-a7e8fcd3e427)
+
+![image](https://github.com/user-attachments/assets/cefc0515-9673-490b-a8ae-574ebafd8d6d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
