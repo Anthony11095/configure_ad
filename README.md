@@ -426,23 +426,58 @@ Choose **Domain**, and enter: `mydomain.com`.
 
 -
 
+## ** STEP 55 – OPEN SYSTEM PROPERTIES**
 ![image](https://github.com/user-attachments/assets/cfd5379c-270e-4af7-8090-1081cdbf0773)
+Go to Client-1 and navigate to **Settings > System > About**. Under the “Related settings” section on the right, click **System info**, then select **Change settings** to open the System Properties window.
 
+---
+
+## ** STEP 56 – BEGIN DOMAIN JOIN PROCESS**
 ![image](https://github.com/user-attachments/assets/0b01573f-fe5b-46df-8a22-1682f098e629)
+Inside the System Properties window, under the "Computer Name" tab, click the **Change** button to rename this computer or change its domain/workgroup.
 
+---
+
+## ** STEP 57 – ENTER DOMAIN NAME**
 ![image](https://github.com/user-attachments/assets/3f432b92-7be5-4913-8f36-51c7777d9726)
+In the pop-up window, select **Domain**, then enter the domain name you created (e.g., `mydomain.com`). Click **OK** to proceed.
 
+---
+
+## ** STEP 58 – AUTHENTICATE WITH ADMIN CREDENTIALS**
 ![image](https://github.com/user-attachments/assets/6f3531e5-bde6-4835-b42d-9a9ad155a063)
+You’ll be prompted to enter domain credentials. Use the admin account created earlier (e.g., `mydomain.com\jane_admin`) and enter the correct password, then press **OK**.
 
+---
+
+## ** STEP 59 – CONFIRM DOMAIN JOIN SUCCESS**
 ![image](https://github.com/user-attachments/assets/4d65cfd2-f87f-4410-856f-b824931bd796)
+If successful, you’ll see a confirmation window saying “Welcome to the mydomain.com domain.” This means Client-1 has been successfully joined to the domain.
 
+---
+
+## ** STEP 60 – RESTART CLIENT-1 TO COMPLETE JOIN**
 ![image](https://github.com/user-attachments/assets/fadb33a6-75d1-44ef-824a-20ca788482d1)
+You’ll receive a notification prompting a system restart. Click **OK** and then restart the machine to apply the domain membership changes.
 
+---
+
+## ** STEP 61 – OPEN ACTIVE DIRECTORY TOOLS ON DC-1**
 ![image](https://github.com/user-attachments/assets/d3175012-bf42-461d-8dea-565a21921674)
+On the Domain Controller (DC-1), open **Active Directory Users and Computers** by searching for it in the Start menu.
 
+---
+
+## ** STEP 62 – VERIFY CLIENT-1 IS LISTED IN ADUC**
 ![image](https://github.com/user-attachments/assets/47d42430-4f5b-44a2-92f8-9f86414feede)
+In ADUC, check under the **Computers** container to make sure that `client-1` is now listed. This confirms the computer is registered with the domain.
 
+---
+
+## ** STEP 63 – CREATE “_CLIENTS” OU AND MOVE CLIENT-1**
 ![image](https://github.com/user-attachments/assets/d9067879-b551-4db3-b8e4-7bda88cbde32)
+Right-click the domain root in ADUC, select **New > Organizational Unit**, and name it `_CLIENTS`. Then drag and drop `client-1` from the Computers container into the `_CLIENTS` OU.
+
 
 ![image](https://github.com/user-attachments/assets/fcf6944d-5314-4517-a9ba-b68d6eb411ae)
 
