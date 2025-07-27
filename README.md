@@ -48,7 +48,8 @@ This project demonstrates the setup and configuration of an Active Directory env
 - PowerShell ISE installed and ready on `DC-1`
 - Provided PowerShell script for bulk user
 
-  ![image](https://github.com/user-attachments/assets/e2633080-d9f6-4722-95f4-d45c7ef1f9c8)
+  ![image](https://github.com/user-attachments/assets/d0813d8c-b01c-4e07-807f-93fea22cde8f)
+
   ![image](https://github.com/user-attachments/assets/87f83de6-736f-4479-a46c-c464ff8aa58c)
   ![image](https://github.com/user-attachments/assets/37ff8d4a-a037-4c4f-b67d-b5e2a0ecfd21)
   ![image](https://github.com/user-attachments/assets/2f47a13c-1728-4056-ae59-d9fcffde6c65)
