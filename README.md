@@ -41,13 +41,6 @@ This project demonstrates the setup and configuration of an Active Directory env
 
 ---
 
-### Part 2 – Remote Access and User Automation
-
-- Remote Desktop enabled on `Client-1`
-- Permissions configured to allow domain users to connect via RDP
-- PowerShell ISE installed and ready on `DC-1`
-- Provided PowerShell script for bulk user
-
 ## Installation Steps
 
 1. **Create a Virtual Network in Azure**
