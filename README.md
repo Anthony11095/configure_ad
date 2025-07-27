@@ -298,30 +298,96 @@ Right-click the domain, go to:
 **New** > **Organizational Unit**  
 Enter the name `ADMINS` and click **OK**.
 
+### 36. Create Another Organizational Unit: ADMINS  
 ![image](https://github.com/user-attachments/assets/15ce1450-0998-4bcf-95e6-12dc2ec8eb09)
+> Right-click the domain name in Active Directory Users and Computers.  
+> Navigate to: **New > Organizational Unit**  
+> Enter the name `ADMINS` and click **OK**.
 
+---
 
+### 37. Verify the ADMINS OU Was Created  
 ![image](https://github.com/user-attachments/assets/6b63ef9f-3f8d-48e4-adb2-c7088b5f8e95)
+> Confirm the new OU named `_ADMINS` now appears in the left-hand panel under your domain.
 
+---
+
+### 38. Log in Using Domain Admin Credentials  
 ![image](https://github.com/user-attachments/assets/a01e0474-18ec-4d65-9c7b-3ad652cadda4)
+> Connect using Remote Desktop with the following credentials:  
+> Username: `mydomain.com\jane_admin`  
+> Enter the password created during the domain admin setup.
 
+---
+
+### 39. Refresh the ADUC Console  
 ![image](https://github.com/user-attachments/assets/e0907833-7753-42f1-ac33-b520dc3135a9)
+> In Active Directory Users and Computers, right-click your domain name and select **Refresh**  
+> Ensure that `_ADMINS` and `_EMPLOYEES` OUs are both visible.
 
+---
+
+### 40. Create New User in ADMINS OU  
 ![image](https://github.com/user-attachments/assets/a7547f6d-f15a-4ba0-b8da-984c51688699)
+> Right-click the `_ADMINS` OU and select: **New > User**  
+> Begin entering the user details for the domain admin account.
 
+---
+
+###  41. Fill in User Details for Jane Doe  
 ![image](https://github.com/user-attachments/assets/511d3afe-fb8d-4ea5-ac65-9cb8f017ec5e)
+> Input the following:  
+> First name: Jane  
+> Last name: Doe  
+> User logon name: `jane_admin`  
+> Click **Next** to proceed.
 
+---
+
+### 42. Set Jane Admin's Password  
 ![image](https://github.com/user-attachments/assets/81eaffdf-8552-4755-8678-3a26e5ff5bdb)
+> Set a strong password such as `Cyberlab123!`  
+> Confirm the password, then check **Password never expires**  
+> Click **Next**, then **Finish**.
 
+---
+
+### 43. Open User Properties  
 ![image](https://github.com/user-attachments/assets/28a99bc8-9f44-4f01-bcac-124e217caa87)
+> Right-click on `Jane Doe` under `_ADMINS` and select **Properties**  
+> Navigate to the **Member Of** tab.
 
+---
+
+### 44. Add to Domain Admins Group  
 ![image](https://github.com/user-attachments/assets/4b5fdad9-3e8d-4862-a3f2-71239f7b1851)
+> In the Member Of tab, click **Add**  
+> Type `Domain Admins`, click **Check Names**, then **OK**.
 
+---
+
+### 45. Confirm Group Membership  
 ![image](https://github.com/user-attachments/assets/9dfb3b92-0e09-492c-b7c7-fb100754791b)
+> Ensure that `Domain Admins` and `Domain Users` both appear under group memberships  
+> Click **Apply**, then **OK** to save.
 
+---
+
+### 46. Log Off the Current Session  
 ![image](https://github.com/user-attachments/assets/9514f0b3-4f7f-4940-90f6-a8ad4dd6af34)
+> Use the shortcut `Win + R` to open Run  
+> Type `logoff` and hit Enter to log off safely.
 
+---
+
+### 47. Reconnect Using Microsoft Remote Desktop  
 ![image](https://github.com/user-attachments/assets/0a0120c0-9165-40d8-b877-40f9a8eb2929)
+> Open Microsoft Remote Desktop  
+> Select the VM for `dc-1`  
+> Log in as `mydomain.com\jane_admin` using the password you set.
+
+---
+
 
 ![image](https://github.com/user-attachments/assets/b9a7fe98-83dd-44de-991f-75009660e8e4)
 
