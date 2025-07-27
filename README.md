@@ -241,20 +241,62 @@ This confirms Active Directory Domain Services were successfully installed, and 
 ![image](https://github.com/user-attachments/assets/bbe1b2a6-ba5d-42ce-9267-a7e8fcd3e427)
 Once restarted, open **Microsoft Remote Desktop** and reconnect to the VM (e.g., `dc-1`) using your domain credentials.
 
+### 28. Verify AD DS and DNS Role Installation  
 ![image](https://github.com/user-attachments/assets/cefc0515-9673-490b-a8ae-574ebafd8d6d)
+After reboot, return to **Server Manager**. Confirm that **AD DS** and **DNS** roles appear in the dashboard, both showing green status under **Manageability**.
 
+---
+
+### 29. Open Active Directory Tools  
 ![image](https://github.com/user-attachments/assets/ccadd6d2-44d1-4afc-b8eb-847c42fd9b56)
+From the Start Menu, open **Active Directory Users and Computers** to begin managing the domain.
 
+---
+
+### 30. Confirm Domain in ADUC  
 ![image](https://github.com/user-attachments/assets/604687bb-d710-4c8b-8d0f-1540626b061f)
+In the left pane of **Active Directory Users and Computers**, confirm that your domain (e.g., `mydomain.com`) is displayed under the domain controller (e.g., `dc-1.mydomain.com`).
 
+---
+
+### 31. View Default AD Structure  
 ![image](https://github.com/user-attachments/assets/8f19e605-6e69-4a04-a670-dfda3b4cc052)
+Expand the domain structure. You will see default containers like:  
+- **Builtin**  
+- **Computers**  
+- **Domain Controllers**  
+- **Users**
+
+---
+
+### 32. Right-Click Domain to Refresh  
 ![image](https://github.com/user-attachments/assets/80fd10a2-776e-4ccf-84c6-de31f7a27dfb)
+Right-click your domain name (e.g., `mydomain.com`) and select **Refresh** to ensure the console reflects the most recent state.
+
+---
+
+### 33. Create a New User  
 ![image](https://github.com/user-attachments/assets/d45b6c8a-d430-4ab3-828e-851d27398260)
+Right-click the **Users** container or a specific OU, then go to:  
+**New** > **User**  
+This opens the wizard to create a new Active Directory user account.
 
+---
 
+### 34. Create Organizational Unit (OU): EMPLOYEES  
 ![image](https://github.com/user-attachments/assets/18d42bb1-ccd4-459b-8c42-2a83aeac4c64)
+Right-click the domain name, go to:  
+**New** > **Organizational Unit**  
+Enter the name `EMPLOYEES` and click **OK** to create a new OU for user accounts.
 
+---
+
+### 35. Create Organizational Unit (OU): ADMINS  
 ![image](https://github.com/user-attachments/assets/34e42bec-7d9f-485a-b1a6-72a271384ea4)
+Repeat the same process to create another OU.  
+Right-click the domain, go to:  
+**New** > **Organizational Unit**  
+Enter the name `ADMINS` and click **OK**.
 
 ![image](https://github.com/user-attachments/assets/15ce1450-0998-4bcf-95e6-12dc2ec8eb09)
 
