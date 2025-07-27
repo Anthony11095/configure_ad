@@ -123,31 +123,71 @@ This project demonstrates the setup and configuration of an Active Directory env
    - Confirm IP and OS information match your deployed environment.
    - Click **Next** to proceed to server role selection (e.g., AD DS).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 10. Add Roles and Features  
 ![image](https://github.com/user-attachments/assets/e4458fba-e325-4078-8521-b997d14a9d37)
+From Server Manager, click **"Add roles and features"** to launch the wizard that allows you to install Active Directory Domain Services (AD DS).
 
+---
+
+### 11. Select Destination Server  
 ![image](https://github.com/user-attachments/assets/17cd520c-df11-439f-af64-da2016787103)
+On the **"Select destination server"** page, choose **"Select a server from the server pool"** and verify the correct server (`dc-1`) is selected. Click **Next**.
 
+---
+
+### 12. Select Server Roles  
 ![image](https://github.com/user-attachments/assets/e1d5aa9c-94a6-4e09-a072-68ad3cd59df2)
+On the **"Select server roles"** screen, check the box for **Active Directory Domain Services**. A pop-up will appear asking to add required features — accept and continue by clicking **Next**.
 
+---
+
+### 13. Confirm Installation Selections  
 ![image](https://github.com/user-attachments/assets/255f94db-d673-4a44-8145-46a87d0f3016)
+Review the roles and features selected. Ensure **"Restart the destination server automatically if required"** is checked. Click **Install** to begin.
 
+---
+
+### 14. Monitor Installation Progress  
 ![image](https://github.com/user-attachments/assets/dc32cb13-fb9f-40b4-bf14-b1a7b00bf6ec)
+Wait for the wizard to install Active Directory Domain Services. Once complete, the results will show **Installation succeeded**. Click **Close**.
 
+---
+
+### 15. Promote Server to Domain Controller  
 ![image](https://github.com/user-attachments/assets/d6188123-b10b-4544-9c02-92936aeaee24)
+In Server Manager, click the yellow exclamation icon, then select **"Promote this server to a domain controller"** to continue domain configuration.
+
+---
+
+### 16. Configure Deployment  
+![image](https://github.com/user-attachments/assets/7594d0a4-f53c-41b7-b337-e994b9edad0a)
+In the **Deployment Configuration** window, select **"Add a new forest"** and enter a domain name (e.g., `mydomain.com`). Click **Next** to proceed.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/7594d0a4-f53c-41b7-b337-e994b9edad0a)
 
