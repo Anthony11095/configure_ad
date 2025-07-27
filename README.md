@@ -163,53 +163,83 @@ In Server Manager, click the yellow exclamation icon, then select **"Promote thi
 ![image](https://github.com/user-attachments/assets/7594d0a4-f53c-41b7-b337-e994b9edad0a)
 In the **Deployment Configuration** window, select **"Add a new forest"** and enter a domain name (e.g., `mydomain.com`). Click **Next** to proceed.
 
+### 17. Deployment Configuration  
+![image](https://github.com/user-attachments/assets/7594d0a4-f53c-41b7-b337-e994b9edad0a)
+Select **"Add a new forest"** and enter your domain name (e.g., `mydomain.com`).
+
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/7594d0a4-f53c-41b7-b337-e994b9edad0a)
-
+### 18. Specify Root Domain Name  
 ![image](https://github.com/user-attachments/assets/90bb3999-0c47-4b53-be8f-e9bb5a685456)
+In the **Deployment Configuration** wizard, enter your domain name in the **Root domain name** field and click **Next**.
 
+---
+
+### 19. Domain Controller Options  
 ![image](https://github.com/user-attachments/assets/9d4444ee-828f-4087-ab0d-dcee125ce30b)
+Leave the forest and domain functional levels set to **Windows Server 2016** (or appropriate version).  
+Make sure the following roles are checked:  
+- **Domain Name System (DNS) server**  
+- **Global Catalog (GC)**  
+Enter and confirm the **Directory Services Restore Mode (DSRM)** password.  
+Click **Next**.
 
+---
+
+### 20. DNS Options  
 ![image](https://github.com/user-attachments/assets/7d3ab057-c533-4614-bd72-a4fac5bc91d9)
+On the **DNS Options** screen, leave **"Create DNS delegation"** unchecked.  
+Click **Next**.
 
+---
+
+### 21. Additional Options  
 ![image](https://github.com/user-attachments/assets/27a6df98-286b-48d1-882b-ac52951d4a2b)
+Review the **NetBIOS domain name** (auto-generated as `MYDOMAIN` based on your root domain).  
+Click **Next**.
 
+---
+
+### 22. Paths  
 ![image](https://github.com/user-attachments/assets/6cf7841d-606e-423e-854d-0e8d2b610456)
+Accept the default locations for the AD DS database, log files, and SYSVOL.  
+Click **Next**.
 
+---
+
+### 23. Review Options  
 ![image](https://github.com/user-attachments/assets/c02bdb75-71ea-4175-a2fd-ecf004fcd847)
+Verify your configuration on the **Review Options** screen.  
+Optionally, click **"View script"** to generate the equivalent PowerShell command.  
+Click **Next**.
 
+---
+
+### 24. Prerequisites Check  
 ![image](https://github.com/user-attachments/assets/784e8b6a-c4c5-4230-937d-41b09f5172bb)
+Wait for the prerequisite checks to complete.  
+You may see warnings, but as long as all checks pass, click **Install** to begin the promotion.
 
+---
+
+### 25. Installation Progress  
 ![image](https://github.com/user-attachments/assets/4d93f123-d0b8-45a4-a7f2-bbed37801aa5)
+The installation begins and may take several minutes.  
+The system will automatically **restart** once the promotion is complete.
 
+---
+
+### 26. Restart and Sign Out  
 ![image](https://github.com/user-attachments/assets/0865252e-976f-4fa8-9c99-49e0627dd6ce)
+After installation, a prompt appears saying:  
+**"You're about to be signed out"**  
+This confirms Active Directory Domain Services were successfully installed, and the machine is now rebooting as a Domain Controller.
 
+---
+
+### 27. Reconnect via Remote Desktop  
 ![image](https://github.com/user-attachments/assets/bbe1b2a6-ba5d-42ce-9267-a7e8fcd3e427)
+Once restarted, open **Microsoft Remote Desktop** and reconnect to the VM (e.g., `dc-1`) using your domain credentials.
 
 ![image](https://github.com/user-attachments/assets/cefc0515-9673-490b-a8ae-574ebafd8d6d)
 
