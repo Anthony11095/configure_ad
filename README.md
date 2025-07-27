@@ -48,20 +48,94 @@ This project demonstrates the setup and configuration of an Active Directory env
 - PowerShell ISE installed and ready on `DC-1`
 - Provided PowerShell script for bulk user
 
-  ![image](https://github.com/user-attachments/assets/d0813d8c-b01c-4e07-807f-93fea22cde8f)
+## Installation Steps
 
-  ![image](https://github.com/user-attachments/assets/87f83de6-736f-4479-a46c-c464ff8aa58c)
-  ![image](https://github.com/user-attachments/assets/37ff8d4a-a037-4c4f-b67d-b5e2a0ecfd21)
-  ![image](https://github.com/user-attachments/assets/2f47a13c-1728-4056-ae59-d9fcffde6c65)
- ![image](https://github.com/user-attachments/assets/5ef16986-8374-4745-be3c-ad056d7863d9)
+1. **Create a Virtual Network in Azure**
+     ![image](https://github.com/user-attachments/assets/d0813d8c-b01c-4e07-807f-93fea22cde8f)
+   - Go to the Azure Portal → "Virtual networks" → **Create**.
+   - Set:
+     - Subscription: `Azure subscription 1`
+     - Resource group: `Active Directory Lab`
+     - Virtual network name: `Active Directory-VNet`
+     - Region: `East US` (or your preferred region)
+     - later changed to canada region.
+   - Click **Review + create**, then **Create**.
+
+2. **Deploy the Domain Controller Virtual Machine (DC-1)**
+     ![image](https://github.com/user-attachments/assets/87f83de6-736f-4479-a46c-c464ff8aa58c)
+   - Navigate to **Virtual Machines** → **Create**.
+   - Under **Basics**, configure:
+     - Subscription: `Azure subscription 1`
+     - Resource group: `Active Directory Lab`
+     - Virtual machine name: `dc-1`
+     - Region: `Canada Central`
+     - Image: `Windows Server 2022 Datacenter: Azure Edition`
+     - Size: Choose a compatible and affordable instance
+   - Click **Review + create**, then **Create**.
+
+3. **Deploy the Client Virtual Machine (Client-1)**
+     ![image](https://github.com/user-attachments/assets/37ff8d4a-a037-4c4f-b67d-b5e2a0ecfd21)
+   - Repeat the VM creation process for the second machine.
+   - Set:
+     - Virtual machine name: `client-1`
+     - Region: Same as DC-1 (e.g., `Canada Central`)
+     - Image: `Windows Server 2022 Datacenter: Azure Edition`
+     - Ensure both VMs are in the same virtual network (`Active Directory-VNet`)
+   - Click **Review + create**, then **Create**.
+
+4. **Verify Both VMs Are Running**
+     ![image](https://github.com/user-attachments/assets/37ff8d4a-a037-4c4f-b67d-b5e2a0ecfd21)
+   - Go to **Virtual Machines** in the Azure Portal.
+   - Confirm that `dc-1` and `client-1` both show status as **Running**.
+   - Check IP address assignments and OS type under the details panel.
+
+5. **Configure IP Settings for Client-1*
+        ![image](https://github.com/user-attachments/assets/2f47a13c-1728-4056-ae59-d9fcffde6c65)
+   - Go to **Networking** tab → click on the **Network Interface** for `client-1`.
+   - Under **IP configurations**, ensure:
+     - Static private IP is assigned (if required).
+     - The subnet matches the Active Directory VNet.
+     - The DNS server points to the internal IP of `dc-1`.
+
+6. **Review VM Network Overview**
+     ![image](https://github.com/user-attachments/assets/5ef16986-8374-4745-be3c-ad056d7863d9)
+   - Confirm both VMs appear under the Virtual Machines list.
+   - Validate:
+     - Private IP addresses are in the same subnet.
+     - Public IP is assigned (if needed for remote access).
+     - OS: `Windows Server 2022 Datacenter: Azure Edition`.
+
+7. **Log Into DC-1 and Launch Server Manager
 ![image](https://github.com/user-attachments/assets/1f9c4313-59ba-4cba-83d5-31f084654c46)
+   - Access `dc-1` through the Azure Portal or RDP.
+   - On the desktop, open **Server Manager** to begin server configuration.
+   - Review device specifications for RAM, CPU, and server name (`dc-1`).
+
+8. **Begin Server Role Configuration**
+    ![image](https://github.com/user-attachments/assets/47216e96-1734-44ce-9a00-31c35fb22b98)
+   - In Server Manager, click **Add roles and features**.
+   - Proceed through the wizard to install the necessary roles.
+   - Use "Role-based or feature-based installation" for local server setup.
+
+9. **Select Destination Server**
+    ![image](https://github.com/user-attachments/assets/e4458fba-e325-4078-8521-b997d14a9d37)
+   - Choose the server `dc-1` from the pool.
+   - Confirm IP and OS information match your deployed environment.
+   - Click **Next** to proceed to server role selection (e.g., AD DS).
 
 
 
 
 
 
-![image](https://github.com/user-attachments/assets/47216e96-1734-44ce-9a00-31c35fb22b98)
+
+
+
+
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/e4458fba-e325-4078-8521-b997d14a9d37)
 
