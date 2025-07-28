@@ -4,14 +4,25 @@
 
 This project walks through setting up a virtual environment using Azure to install and configure Active Directory. You will deploy a domain controller, create organizational units and user accounts, and connect a client machine to your new domain.
 
-## 💻 Technologies Used
-- Microsoft Windows Server 2019 (Domain Controller)
-- Microsoft Windows 10 (Client Machine)
-- Active Directory Domain Services (AD DS)
-- Remote Desktop Protocol (RDP)
-- Azure Portal (Virtual Machine Management)
-- Active Directory Users and Computers (ADUC)
+## ✅ Technologies & Tools Used
 
+- **Virtual Machine (VM)**: Used to host the osTicket installation
+- **osTicket**: Open-source support ticket system (downloaded as a .zip file)
+- **Web Server (IIS)**: Internet Information Services used to serve the web content
+- **PHP**: Server-side scripting language required by osTicket
+- **MySQL**: Database system used to store osTicket data
+- **phpMyAdmin** (optional): Web-based interface to manage MySQL databases
+- **Web Browser**: To access the osTicket interface (e.g., Chrome, Edge)
+- **PowerShell / Command Prompt**: For installation and network configuration commands
+
+---
+
+## 💻 Operating System Used
+
+- **Windows 10** (on the Virtual Machine)
+  - Used to install and run the full osTicket stack
+  - Configured with IIS, PHP, MySQL, and osTicket files
+ 
 ## 📋 Prerequisites
 
 Before beginning installation, ensure you have the following:
